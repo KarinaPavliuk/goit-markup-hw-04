@@ -48,6 +48,7 @@ body {
   color: var(--brand-color-text);
   font-family: Roboto, sans-serif;
   font-size: 16px;
+  font-style: normal;
   background: #ffffff;
 }
 
@@ -146,11 +147,13 @@ body {
 /* ------------------------------ SUBHEADER ------------------------------ */
 
 .subheader {
+  margin: 0 auto;
   background-color: var(--brand-color-dark);
   background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 1440px;
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -172,6 +175,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-size: 16px;
+  font-style: normal;
   line-height: 1.2;
   align-items: center;
   letter-spacing: 0.04em;
@@ -416,6 +420,7 @@ body {
   border: 1px solid var(--brand-color-accent);
   border-radius: 4px;
   cursor: pointer;
+  font-style: normal;
 }
 
 .portfolio-btn:hover,
@@ -437,17 +442,15 @@ body {
 
 .portfolio-content-list-item {
   width: calc((100% - 48px) / 3);
+  
 }
 
 .portfolio-content-link {
   display: inline-block;
-  border: 1px solid #E7E9FC;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 
 .portfolio-content-link:is(:hover, :focus) {
-  border: 0.5px solid #F4F4FD;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
@@ -457,6 +460,8 @@ body {
 
 .portfolio-content-img-signature {
   padding: 32px 16px;
+  border: 1px solid #E7E9FC;
+  border-top: none;
 }
 
 .portfolio-content-heading {
@@ -526,7 +531,7 @@ body {
 }
 .footer-soc-list {
   display: flex;
-  gap: 24px;
+  gap: 16px;
 }
 .footer-soc-item {
   width: 40px;
